@@ -9,4 +9,8 @@ docker volume prune -f
 docker-compose -f docker-compose.yml -f docker-compose-dev.yml up -d --build --force-recreate
 # docker-compose -f ./docker-compose.yml -f ./docker-compose-dev.yml up -d
 # docker-sync-stack start
+<<<<<<< HEAD
 docker exec -it dv-campus-css.local bash
+=======
+docker exec -it dv-campus.local bash
+>>>>>>> UIBrush with grunt

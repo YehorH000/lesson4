@@ -30,6 +30,23 @@ module.exports = function(grunt) {
             }
         },
 
+<<<<<<< HEAD
+=======
+        cssmin:{
+            options:{
+                mergeIntoShorthands : false,
+                roundingPrecision : -1
+            },
+            target:{
+                files:{
+                    'pub/css/responsive-styles.min.css' : [
+                        'assets/dist/css/responsive-styles-processed.css'
+                    ]
+                }
+            }
+        },
+
+>>>>>>> UIBrush with grunt
         postcss: {
             dev: {
                 options: {
@@ -54,7 +71,11 @@ module.exports = function(grunt) {
                     ]
                 },
                 src: 'assets/dist/css/responsive-styles.css',
+<<<<<<< HEAD
                 dest: 'pub/css/responsive-styles.min.css'
+=======
+                dest: 'assets/dist/css/responsive-styles-processed.css'
+>>>>>>> UIBrush with grunt
             }
         },
 

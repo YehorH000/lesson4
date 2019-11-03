@@ -8,30 +8,52 @@ services:
     sysctls:
       - net.ipv4.ip_unprivileged_port_start=0
     labels:
+<<<<<<< HEAD
       - traefik.http.frontend.rule=Host:dv-campus-css.local,www.dv-campus-css.local
       - traefik.https.frontend.rule=Host:dv-campus-css.local,www.dv-campus-css.local
       # develop with extension that allows setting livereload host and port - https://github.com/lokcito/livereload-extensions
       - traefik.grunt.frontend.rule=Host:dv-campus-css.local,www.dv-campus-css.local
+=======
+      - traefik.http.frontend.rule=Host:dv-campus.local,www.dv-campus.local
+      - traefik.https.frontend.rule=Host:dv-campus.local,www.dv-campus.local
+      # develop with extension that allows setting livereload host and port - https://github.com/lokcito/livereload-extensions
+      - traefik.grunt.frontend.rule=Host:dv-campus.local,www.dv-campus.local
+>>>>>>> UIBrush with grunt
       - traefik.grunt.frontend.entryPoints=grunt
       - traefik.grunt.protocol=http
       - traefik.grunt.port=35729
     extra_hosts:
       # For Linux users only till docker.host.internal is not available by default
       # https://github.com/docker/libnetwork/pull/2348/files
+<<<<<<< HEAD
       - "dv-campus-css.local www.dv-campus-css.local:127.0.0.1"
+=======
+      - "dv-campus.local www.dv-campus.local:127.0.0.1"
+>>>>>>> UIBrush with grunt
       - "host.docker.internal:172.17.0.1"
     environment:
       # Must be set to some of the domains for xdebug to work. Should have server configured in
       # Preferences > Language and Frameworks > PHP > Servers
       # Or just run the project with the same domain and debug enabled in the browser
+<<<<<<< HEAD
       - PHP_IDE_CONFIG=serverName=dv-campus-css.local
+=======
+      - PHP_IDE_CONFIG=serverName=dv-campus.local
+>>>>>>> UIBrush with grunt
 #      - PHP_XDEBUG_ENABLED=1 # needed for the entrypoint script
 
 # IMPORTANT FOR MAC USERS!!!
 # ALL BELOW is for Mac only to enable docker sync stack
 #    volumes:
+<<<<<<< HEAD
 #      - dv-campus-css.local-sync:/var/www/html:nocopy
 
 #volumes:
 #  dv-campus-css.local-sync:
+=======
+#      - dv-campus.local-sync:/var/www/html:nocopy
+
+#volumes:
+#  dv-campus.local-sync:
+>>>>>>> UIBrush with grunt
 #    external: true

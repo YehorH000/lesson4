@@ -1,5 +1,9 @@
 # SSL certificates for development
+<<<<<<< HEAD
 # $ mkcert dv-campus-css.local www.dv-campus-css.local
+=======
+# $ mkcert dv-campus.local www.dv-campus.local
+>>>>>>> UIBrush with grunt
 #
 # DEVELOPMENT:
 # $ docker-compose -f docker-compose.yml -f docker-compose-dev.yml up -d
@@ -12,7 +16,11 @@
 version: '3.7'
 services:
   php-apache:
+<<<<<<< HEAD
     container_name: dv-campus-css.local
+=======
+    container_name: dv-campus.local
+>>>>>>> UIBrush with grunt
     build:
       context: .
       dockerfile: docker/Dockerfile
@@ -24,15 +32,25 @@ services:
     restart: always
     labels:
       # - traefik.enable=false
+<<<<<<< HEAD
       - traefik.http.frontend.rule=Host:dv-campus-css.local,www.dv-campus-css.local
       - traefik.http.frontend.entryPoints=http
       - traefik.https.frontend.rule=Host:dv-campus-css.local,www.dv-campus-css.local
+=======
+      - traefik.http.frontend.rule=Host:dv-campus.local,www.dv-campus.local
+      - traefik.http.frontend.entryPoints=http
+      - traefik.https.frontend.rule=Host:dv-campus.local,www.dv-campus.local
+>>>>>>> UIBrush with grunt
       - traefik.https.frontend.entryPoints=https
       - traefik.https.protocol=https
       - traefik.https.port=443
     # Must add extra_hosts to be written to /etc/hosts - otherwise containerized application can not curl itself
     extra_hosts:
+<<<<<<< HEAD
       - "dv-campus-css.local www.dv-campus-css.local:127.0.0.1"
+=======
+      - "dv-campus.local www.dv-campus.local:127.0.0.1"
+>>>>>>> UIBrush with grunt
 #    links:
 #      - memcached
     external_links:
