@@ -1,0 +1,84 @@
+@media screen and (max-width: 700px) {
+  form {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 700px) {
+  form {
+    width: 50%;
+  }
+}
+body {
+  justify-content: center;
+}
+h2 {
+  text-align: center;
+}
+.parag {
+  text-align: center;
+}
+.parag footer {
+  background: #f37a5b;
+  width: 100%;
+  color: #f37a5b;
+  height: 60px;
+  vertical-align: middle;
+}
+.parag .al_center {
+  background: #eeeeee;
+}
+.parag h2,
+.parag h3 {
+  color: #4a4a4a;
+}
+.parag p {
+  color: #a8a8a8;
+}
+.lorem {
+  text-align: center;
+  padding: 25px;
+  background: #f37a5b;
+}
+hr {
+  height: 8px;
+  width: 100%;
+  background: #c34836;
+  color: #c34836;
+}
+.bord_bot {
+  border-bottom: 1px solid #788b0b;
+}
+.porfolio {
+  margin-left: 23%;
+  margin-right: 23%;
+  margin-bottom: 35px;
+  margin-top: 35px;
+}
+.talk_us {
+  background: #7a7a7a;
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+.white_text {
+  color: white;
+}
+.contact_inf {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+#butt_sub {
+  background: #f37a5b;
+  width: 66%;
+  height: 45px;
+  color: white ;
+}
+input {
+  width: 65%;
+  height: 40px;
+}
+.cont {
+  padding-bottom: 20px;
+}
+.services .support .fas {
+  color: red;
+}
